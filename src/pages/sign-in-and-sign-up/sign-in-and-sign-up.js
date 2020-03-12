@@ -7,8 +7,8 @@ const SignInAndSignUp = () => {
 
   return (
     <div className='sign-in-and-sign-up'>
-      <SignIn></SignIn>
-      <SignUp></SignUp>
+      <SignIn />
+      <SignUp />
     </div>
   )
 
