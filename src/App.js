@@ -30,7 +30,7 @@ class App extends React.Component {
               id: snapshot.id,
               ...snapshot.data()
             }
-          }) // console log inside setstate so that it logs asynchronously
+          })
         })
       } else {
         this.setState({ currentUser: userAuth })
