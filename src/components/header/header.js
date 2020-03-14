@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from '../../assets/crown.svg'
 // ReactComponent is a special name that tells create react app that we want a react component that renders an svg instead of the filename
 
 import { auth } from '../../firebase/firebase.utils'
+import { connect } from 'react-redux'
 
 import './header.styles.scss'
 
@@ -28,4 +29,8 @@ const Header = ({ currentUser }) => {
   )
 }
 
-export default Header
+const mapStateToProps = state => ({
+  currentUser: state.currentUser
+})
+
+export default connect(mapStateToProps)(Header)
