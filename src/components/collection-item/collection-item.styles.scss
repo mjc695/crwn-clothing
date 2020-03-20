@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 350px;
   align-items: center;
+  position: relative;
 
   .image {
     width: 100%;
@@ -27,6 +28,25 @@
 
     .price {
       width: 10%;
+    }
+  }
+  .custom-button{
+    width: 80%;
+    opacity: .7;
+    position: absolute;
+    top: 255px;
+    display: none;
+  }
+  &:hover{
+    .image{
+      opacity: .8;
+    }
+// set display to none in custom button
+// when we have display:flex here, it sets it to show up on screen
+// allows it to be a styling feature rather than just a react feature
+    .custom-button{
+      opacity: .85;
+      display:flex;
     }
   }
 }
